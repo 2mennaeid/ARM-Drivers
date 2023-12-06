@@ -98,7 +98,7 @@ ES_t GPIO_enuGetPinValue(GPIO_PinConfig_t*Copy_PsPinConfig,u8_t*Copy_u8Value)
 	{
 			if(Copy_PsPinConfig->PortId>=PORTA && Copy_PsPinConfig->PortId<=PORTC)
 			{
-				*Copy_u8Value = READ_BIT(GPIO_APS[Copy_PsPinConfig->PortId]->GPIO_ODR,Copy_PsPinConfig->PinId);
+				*Copy_u8Value = READ_BIT(GPIO_APS[Copy_PsPinConfig->PortId]->GPIO_IDR,Copy_PsPinConfig->PinId);
 			}
 			else
 			{
