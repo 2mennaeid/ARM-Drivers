@@ -51,6 +51,8 @@ ES_t ADC_enuInit(ADC_MODE enuMode)
 	CLEAR_BIT(ADC->CR2,11);
     /* set prescaler -->4*/
 	RCC->CFGR |= (1<<14);
+    /* set external trigger by software*/
+	ADC->CR2 |= (7<<17);
 	/*Enable ADC */
 	SET_BIT(ADC->CR2,0);
 	return LocalErrorState;
@@ -101,7 +103,7 @@ void ADC_vSetSampleTime(ADC_enCHANNELS enChannelId,ADC_SampleTime enuSampleTime)
 }
 void ADC_vStartConversion()
 {
-    ADC->CR2 |= (7<<17);
+    
     SET_BIT(ADC->CR2,22);
 }
 
