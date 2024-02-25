@@ -13,7 +13,7 @@
 
 typedef enum
 {
-	ADC0=0,
+	ADC0,
 	ADC1,
 	ADC2,
 	ADC3,
