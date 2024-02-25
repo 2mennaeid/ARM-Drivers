@@ -5,14 +5,14 @@
  *      Author: Menna Eid
  */
 
-#include "STDTYPES.h"
-#include "BIT_MATH.h"
-#include "stm32f103xx.h"
-#include "errorstate.h"
-#include "RCC_Priv.h"
-#include "RCC_Interface.h"
-#include "GPIO_Priv.h"
-#include "GPIO_Interface.h"
+#include "../../LIB/STDTYPES.h"
+#include "../../LIB/BIT_MATH.h"
+#include "../../LIB/stm32f103xx.h"
+#include "../../LIB/errorstate.h"
+#include "../RCC/RCC_Priv.h"
+#include "../RCC/RCC_Interface.h"
+#include "../GPIO/GPIO_Priv.h"
+#include "../GPIO/GPIO_Interface.h"
 #include "ADC_Interface.h"
 
 ES_t ADC_enuInit(ADC_MODE enuMode)
