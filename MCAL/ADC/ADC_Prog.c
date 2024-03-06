@@ -20,7 +20,6 @@ ES_t ADC_enuInit(ADC_MODE enuMode)
 	ES_t LocalErrorState = ES_OK;
 	/*Enable RCC for ADC*/
 	RCC_voidEnablePeriphralCLK(RCC_u8_APB2_BUS,9);
-	RCC_voidEnablePeriphralCLK(RCC_u8_APB2_BUS,0);
 	/* Enable RCC for GPIOA*/
 	RCC_voidEnablePeriphralCLK(RCC_u8_APB2_BUS,2);
 
