@@ -140,3 +140,9 @@ ES_t ADC_enuAnalogRead(u32_t*Copy_u32value)
 		}
 		return LocalErrorState;
 }
+void ADC_vStopConversion()
+{
+	// disble adc
+	CLEAR_BIT(ADC->CR2,0);
+	SYSTICK_enuDelay_ms(1000);
+}
