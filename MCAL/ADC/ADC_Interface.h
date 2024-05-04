@@ -88,4 +88,6 @@ u16_t ADC_enuRead();
 
 ES_t ADC_enuAnalogRead(u32_t*Copy_u32value);
 
+void ADC_vStopConversion();
+
 #endif /* ADC_INTERFACE_H_ */
